@@ -1,77 +1,94 @@
+<!-- LO122034 -->
+<!-- Bintang Harida Ramadhan -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV Bintang</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-
 <body>
-  <header>
-    <nav>
-      <h3 class="logo">B</h3>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">CV</a></li>
-      </ul>
-    </nav>
-  </header>
-  <h1 align="center">Curriculum Vitae</h1>
-  <div class="table-container">
-    <table class="cv-table" border="5" width="100%" cellpadding="10">
-      <tr>
-        <td>Nama</td>
-        <td>Bintang Harida Ramadhan</td>
-        <td rowspan="3" align="center" width="200px">
-          <img src="images/foto-2.jpg" width="200px" />
-        </td>
-      </tr>
-      <tr>
-        <td>NIM</td>
-        <td>L0122034</td>
-      </tr>
-      <tr>
-        <td>Program Studi</td>
-        <td>Informatika</td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <b>Motivasi</b>
-          </br>
-          Selalu berusaha untuk meningkatkan skill setiap hari sekecil apapun
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <b>Harapan</b>
-          <br>
-          Harapan saya saat ini adalah dapat menyelesaikan kuliah S1 saya ini secepat yang saya mampu kemudian bisa
-          mendapatkan pekerjaan yang sesuai dengan kemampuan dan keinginan saya.
-          </br>
-      </tr>
-      <tr colspan="3">
-        <td colspan="3">
-          <b>Pendidikan</b>
-          <br>
-          <ul>
-            <li>2015-2018 - SMP NEGERI 2 BOYOLALI</li>
-            <li>2018-2021 - SMA NEGERI 1 BOYOLALI</li>
-            <li>2022-Saat Ini - UNIVERSITAS SEBELAS MARET</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-    <a href="index.html">kembali ke halaman utama</a>
-  </div>
-
-  <footer>
-    <p class="copy-right">bintang harida &copy; 2024</p>
-    <img src="images/instagram.png" class="icon">
-    <img src="images/whatsapp.png" class="icon">
-    <img src="images/github-sign.png" class="icon">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary m-0 px-5 py-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">Bintang</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="">CV</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="">About</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="container d-flex justify-content-center mt-4">
+      <h1 class="">Curriculum Vitae</h1>
+    </div>
+    <article>
+      <div class="container h-100 w-75 border border-3 border-dark">
+        <div class="row">
+          <div class="col-9 d-flex flex-column">
+            <div class="row h-50">
+              <div class="col-4 d-flex align-items-center border border-dark">Nama</div>
+              <div class="col d-flex align-items-center border border-dark">Bintang Harida Ramadhan</div>
+            </div>
+            <div class="row h-50">
+              <div class="col-4 d-flex align-items-center border border-dark">NIM</div>
+              <div class="col d-flex align-items-center border border-dark">L0122034</div>
+            </div>
+            <div class="row h-50">
+              <div class="col-4 d-flex align-items-center border border-dark">Program Studi</div>
+              <div class="col d-flex align-items-center border border-dark">Informatika</div>
+            </div>
+          </div>
+          <div class="col-3 border border-dark">
+            <img src="images/foto-2.jpg" alt="foto bintang" width="200px" class="img-fluid my-3" />
+          </div>
+        </div>
+        <div class="row d-flex align-items-center border border-dark">
+          <p class="mt-2">
+            <b>Motivasi</b>
+            </br>
+            Selalu berusaha untuk meningkatkan skill setiap hari sekecil apapun
+          </p>
+        </div>
+        <div class="row d-flex align-items-center border border-dark">
+          <p class="mt-2">
+            <b>Harapan</b>
+            <br>
+            Harapan saya saat ini adalah dapat menyelesaikan kuliah S1 saya ini secepat yang saya mampu kemudian bisa
+            mendapatkan pekerjaan yang sesuai dengan kemampuan dan keinginan saya.
+            </br>
+          </p>
+        </div>
+        <div class="row d-flex align-items-center border border-dark">
+          <p class="mt-2">
+            <b>Pendidikan</b>
+            <ul class="ms-3">
+              <li>2015-2018 - SMP NEGERI 2 BOYOLALI</li>
+              <li>2018-2021 - SMA NEGERI 1 BOYOLALI</li>
+              <li>2022-Saat Ini - UNIVERSITAS SEBELAS MARET</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="d-flex flex-row  gap-2 mt-5 p-4 px-5 align-items-center text-align-center"
+    style="background: #b6bfcb;">
+    <p class="me-auto my-auto">bintang harida&copy;2024</p>
+    <a href="https://github.com/bintanghr"><img src="images/github-sign.png" width="20px"></a>
+    <a href="https://instagram.com/bintanghrr"><img src="images/instagram.png" width="20px"></a>
+    <a href="https://wa.me/6281391561584"><img src="images/whatsapp.png" width="20px"></a>
   </footer>
 </body>
-
 </html>

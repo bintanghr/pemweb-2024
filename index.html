@@ -4,30 +4,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=
+  <meta name="viewport" content="width=device-width
   , initial-scale=1.0">
   <title>Website Bintang</title>
   <!-- <link rel="stylesheet" href="style.css" /> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    #body_id, .navbar, .footer, .content {
+      transition: background-color 0.5s, color 0.5s;
+    }
+  </style>
 </head>
-<body style="height: 100vh;">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary m-0 px-5 py-2">
+<body style="height: 100vh;" id="body_id">
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary m-0 px-5 py-2"> -->
+  <nav id="nav" class="navbar navbar-expand-lg m-0 px-5 py-2">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Bintang</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <a class="navbar-brand custom-nav-text" href="#">Bintang</a>
+      <div class="collapse navbar-collapse d-flex" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link custom-nav-text custom-active-nav-text" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cv.html">CV</a>
+            <a class="nav-link custom-nav-text" href="cv.html">CV</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li> -->
         </ul>
-      </div>
+        <div class="nav-item ms-auto">
+          <a class="nav-link ms-auto">
+            <button onclick="switchMode()" class="bg-transparent border-0">
+              <i id="icon" class="bi bi-brightness-high-fill custom-nav-text"></i>
+              <!-- <i class="bi bi-moon-fill"></i> -->
+            </button>
+          </a>
+        </div>
+      </div>   
     </div>
   </nav>
   <main class="container h-75 w-75 d-flex align-items-center justify-content-center gap-3">
@@ -40,12 +52,20 @@
       <a aria-label="selengkapnya mengenai profil saya" href="cv.html">lihat cv saya disini</a>
     </div>
   </main>
-  <footer class="d-flex flex-row  gap-2 mt-3 p-4 px-5 align-items-center text-align-center"
-    style="background: #b6bfcb;">
+  <footer id="footer" class="d-flex flex-row gap-2 mt-5 p-4 px-5 align-items-center text-align-center">
+    <!-- style="background-color: ;"> -->
     <p class="me-auto my-auto">bintang harida&copy;2024</p>
-    <a href="https://github.com/bintanghr"><img src="images/github-sign.png" width="20px"></a>
-    <a href="https://instagram.com/bintanghrr"><img src="images/instagram.png" width="20px"></a>
-    <a href="https://wa.me/6281391561584"><img src="images/whatsapp.png" width="20px"></a>
+    <a href="https://github.com/bintanghr">
+      <i class="bi bi-github sosmed-icon"></i>
+    </a>
+    <a href="https://instagram.com/bintanghrr">
+      <i class="bi bi-instagram sosmed-icon"></i>
+    </a>
+    <a href="https://wa.me/6281391561584">
+      <i class="bi bi-whatsapp sosmed-icon"></i>
+    </a>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
